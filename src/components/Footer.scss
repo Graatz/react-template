@@ -1,0 +1,9 @@
+@import "src/styles/variables.scss";
+
+.footer-wrapper {
+  height: 100%;
+  display: flex;
+  gap: $default-spacing;
+  align-items: center;
+  justify-content: space-between;
+}

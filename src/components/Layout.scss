@@ -1,0 +1,29 @@
+@import "src/styles/variables.scss";
+
+$navbar-height: 100px;
+$footer-height: 75px;
+
+.layout-wrapper {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.layout-content {
+  padding: calc(#{$navbar-height} + #{$default-spacing}) $default-spacing
+    $default-spacing $default-spacing;
+  flex-grow: 1;
+}
+
+.layout-navbar {
+  height: $navbar-height;
+  width: 100%;
+  position: fixed;
+  padding: $default-spacing;
+}
+
+.layout-footer {
+  height: $footer-height;
+  padding: $default-spacing;
+}

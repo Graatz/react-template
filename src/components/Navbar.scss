@@ -1,0 +1,35 @@
+@import "src/styles/variables.scss";
+
+.navbar-wrapper {
+  h1 {
+    margin: 0;
+  }
+
+  height: 100%;
+  display: flex;
+  gap: $default-spacing;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-header {
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  &:visited {
+    color: unset;
+  }
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: calc(#{$default-spacing} / 2);
+
+  .navbar-link {
+    text-decoration: none;
+    &:visited {
+      color: unset;
+    }
+  }
+}
